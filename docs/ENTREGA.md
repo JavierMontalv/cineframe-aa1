@@ -13,7 +13,7 @@
 ## Archivos para el aula virtual
 
 1. ZIP con la carpeta nombrada según la convención de la actividad.
-2. Informe técnico PDF con capturas, pruebas responsive, DOM/CSSOM y arquitectura.
+2. Informe técnico PDF con capturas, pruebas de adaptación a pantallas, DOM/CSSOM y arquitectura.
 3. Evidencias en `docs/evidencias/` y documentación técnica en `docs/`.
 
 Enviar los archivos mediante **Subir Actividad** en el aula virtual. Los enlaces públicos sirven de apoyo y no sustituyen el canal de entrega dispuesto por el curso.

@@ -1,0 +1,15 @@
+ENTREGA FINAL - CINEFRAME - ACTIVIDAD AA1
+Breyner Javier Montalvo Peñarredonda
+
+1. INFORME ACADÉMICO: docs/Informe_Tecnico.pdf
+   Portada, funcionalidades, capturas, adaptación a pantallas y arquitectura AWS.
+2. APLICACIÓN: abrir index.html para consultar el proyecto.
+3. EVIDENCIAS: docs/evidencias.
+4. FOROS: docs/FORO.md contiene los textos en español para copiar al aula.
+   Los comentarios a compañeros se ajustan a sus publicaciones reales.
+5. GUÍA DE ENTREGA: docs/ENTREGA.md.
+6. LICENCIAS: docs/LICENCIAS_EN_ESPANOL.md explica los permisos de uso.
+   Los originales en inglés no son actividades para redactar ni completar.
+
+Sube el ZIP completo mediante Subir Actividad del aula virtual.
+El código, el informe y los textos académicos ya están preparados.

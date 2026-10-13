@@ -4,7 +4,7 @@
 **Programa:** Ingeniería de Software  
 **Institución:** UCompensar
 
-Sitio de reseñas de películas con HTML semántico, Bootstrap 5.3.8, CSS responsive y JavaScript. Incluye ocho fichas, búsqueda por título/director/actor, filtros por género y año, ordenamiento por fecha, favoritas persistentes y comentarios locales.
+Sitio de reseñas de películas con HTML semántico, Bootstrap 5.3.8, CSS adaptable y JavaScript. Incluye ocho fichas, búsqueda por título/director/actor, filtros por género y año, ordenamiento por fecha, favoritas persistentes y comentarios locales.
 
 ## Consultar y ejecutar
 
@@ -24,7 +24,7 @@ npm test
 npm run check
 ```
 
-Después de editar `src/app.js`, `src/catalog.js` o `src/movies.json`, reconstruir el runtime con `npm run build`. Las portadas se regeneran con `node scripts/generate-art.mjs`.
+Después de editar `src/app.js`, `src/catalog.js` o `src/movies.json`, reconstruir el archivo ejecutable de la aplicación con `npm run build`. Las portadas se regeneran con `node scripts/generate-art.mjs`.
 
 ## Cumplimiento de la actividad
 
@@ -36,10 +36,10 @@ Después de editar `src/app.js`, `src/catalog.js` o `src/movies.json`, reconstru
 | Ficha de película | Sinopsis, reseña, dirección, actores, fecha, duración y portada |
 | Favoritas | Lista persistente en el navegador |
 | Comentarios opcionales | Alias, valoración, opinión, validación y eliminación local |
-| Uso de Bootstrap | CSS y bundle 5.3.8 servidos localmente; grillas, formularios y menú colapsable |
+| Uso de Bootstrap | CSS y paquete JavaScript 5.3.8 servidos localmente; grillas, formularios y menú colapsable |
 | Móvil <576 px | `col-12`, probado a 390 px |
-| Tablet ≥576 px | `col-sm-6`, probado a 640 px |
-| Desktop ≥768 px | `col-md-4`, probado a 1024 px; mejora a cuatro columnas desde 992 px |
+| Tableta ≥576 px | `col-sm-6`, probado a 640 px |
+| Escritorio ≥768 px | `col-md-4`, probado a 768 px; mejora a cuatro columnas desde 992 px |
 | Carpeta de entrega | `AA1_Montalvo_Peñarredonda_BreynerJavier` |
 | Foro de marketing y dos respuestas | Participación y bases para adaptar a publicaciones reales en `docs/FORO.md` |
 
@@ -47,7 +47,7 @@ Se aplican buenas prácticas de estructura, etiquetas en minúsculas, atributos 
 
 ## Alcance
 
-Las favoritas y comentarios se almacenan solo en el navegador del visitante. No se comparten entre personas, no existe autenticación y no hay un backend de moderación. Las valoraciones son editoriales. Las portadas son ilustraciones propias, no afiches oficiales. El proyecto no reproduce películas.
+Las favoritas y comentarios se almacenan solo en el navegador del visitante. No se comparten entre personas, no existe autenticación y no hay un sistema central de moderación. Las valoraciones son editoriales. Las portadas son ilustraciones propias, no afiches oficiales. El proyecto no reproduce películas.
 
 ## Entrega
 

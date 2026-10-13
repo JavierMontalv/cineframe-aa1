@@ -11,9 +11,9 @@
 
 Orden por fecha de estreno; búsqueda por título, director y actor; filtros de género y año; eliminación de filtros activos; orden alternativo; favoritas persistentes; ficha individual; comentarios guardados como texto; entrada que contiene HTML sin ejecución; persistencia y eliminación de comentarios; control de lectura por teclado; recálculo de tamaño mediante propiedad CSS; recuperación del estado vacío; película inexistente; imágenes disponibles y ausencia de errores de JavaScript o recursos fallidos.
 
-## Responsive
+## Adaptación a pantallas
 
-| Viewport | Grilla del catálogo | Resultado |
+| Ancho de pantalla | Grilla del catálogo | Resultado |
 | --- | --- | --- |
 | 390 px | Una columna, `col-12` | Aprobado; menú Bootstrap colapsable; ficha sin desbordamiento |
 | 640 px | Dos columnas, `col-sm-6` | Aprobado |
@@ -32,4 +32,4 @@ npm run check
 npm run dev
 ```
 
-La prueba de navegador requiere Playwright y un navegador compatible. Tras instalar esas herramientas en el entorno de desarrollo, ejecutar `node tests/browser.cjs`. `TEST_URL` permite probar otro host. `BROWSER_CHANNEL` selecciona el canal disponible; por defecto usa `msedge`. La aplicación publicada no depende de Playwright.
+La prueba de navegador requiere Playwright y un navegador compatible. Tras instalar esas herramientas en el entorno de desarrollo, ejecutar `node tests/browser.cjs`. `TEST_URL` permite probar otra dirección del sitio. `BROWSER_CHANNEL` selecciona el canal disponible; por defecto usa `msedge`. La aplicación publicada no depende de Playwright.

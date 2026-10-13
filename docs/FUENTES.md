@@ -3,7 +3,7 @@
 ## Documentación técnica
 
 - Bootstrap 5.3.8, introducción: https://getbootstrap.com/docs/5.3/getting-started/introduction/
-- Bootstrap, grillas y breakpoints: https://getbootstrap.com/docs/5.3/layout/grid/
+- Bootstrap, grillas y puntos de adaptación: https://getbootstrap.com/docs/5.3/layout/grid/
 - MDN, DOM: https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction
 - MDN, CSSOM: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model
 - AWS, acceso a S3 mediante CloudFront OAC: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
@@ -28,3 +28,5 @@ Los nombres de películas y los derechos de las obras corresponden a sus respect
 - Bootstrap: `assets/vendor/BOOTSTRAP-LICENSE.txt` (MIT).
 - DM Sans y Manrope: `assets/fonts/FONT-LICENSES.txt` (SIL Open Font License).
 - Portadas: composiciones SVG originales del proyecto, generadas por `scripts/generate-art.mjs`.
+
+La explicación de las licencias en español está en `LICENCIAS_EN_ESPANOL.md`. Los originales se conservan junto a los componentes.
