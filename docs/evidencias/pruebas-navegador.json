@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "checks": [
+    "orden por fecha de estreno",
+    "búsqueda y género combinados",
+    "eliminar filtro activo sincroniza el formulario",
+    "orden alternativo por fecha",
+    "favoritas persisten al recargar",
+    "ficha individual",
+    "opinión almacenada como texto, sin ejecutar HTML",
+    "contenido no ejecuta scripts",
+    "comentarios persisten al recargar",
+    "eliminar comentarios locales",
+    "control CSS de lectura responde al teclado",
+    "propiedad CSS modifica el tamaño de las reseñas",
+    "estado vacío permite recuperar el catálogo",
+    "película inexistente controlada",
+    "grilla y ancho 390 px: 1 columnas",
+    "menú Bootstrap móvil abre y cierra al navegar",
+    "grilla y ancho 640 px: 2 columnas",
+    "grilla y ancho 768 px: 3 columnas",
+    "grilla y ancho 1024 px: 4 columnas",
+    "ficha móvil sin desbordamiento",
+    "imágenes disponibles",
+    "sin errores de JavaScript ni recursos fallidos"
+  ],
+  "viewports": [
+    390,
+    640,
+    768,
+    1024,
+    1440
+  ],
+  "browser": "Chromium/Edge",
+  "time": "2026-10-13T02:58:54.347Z"
+}

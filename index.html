@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" data-bs-theme="dark">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="description" content="CineFrame: reseñas de películas, fichas, filtros y una lista personal de favoritas." />
+ <meta name="theme-color" content="#10131a" />
+ <title>CineFrame | Historias que merecen tu tiempo</title>
+ <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+ <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+ <link rel="stylesheet" href="assets/css/styles.css" />
+ <script defer="defer" src="assets/vendor/bootstrap.bundle.min.js"></script>
+ <script defer="defer" src="assets/js/runtime.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#main">Saltar al contenido</a>
+ <header class="site-header">
+  <nav class="navbar navbar-expand-sm container" aria-label="Navegación principal">
+   <a class="navbar-brand brand" href="#/" aria-label="CineFrame, inicio"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="4" width="26" height="24" rx="5"/><path d="M3 11h26M3 21h26M10 4v7m12-7v7M10 21v7m12-7v7"/></svg>Cine<span>Frame</span></a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+   <div class="collapse navbar-collapse justify-content-end" id="navigation"><ul class="navbar-nav gap-sm-4"><li class="nav-item"><a class="nav-link" href="#/" data-nav="home">Explorar</a></li><li class="nav-item"><a class="nav-link" href="#/favoritas" data-nav="favorites">Mi lista <span id="favorites-count" class="nav-count">0</span></a></li><li class="nav-item"><a class="nav-link" href="#/acerca" data-nav="about">El proyecto <span aria-hidden="true">↗</span></a></li></ul></div>
+  </nav>
+ </header>
+ <main id="main" tabindex="-1"><div class="container py-5"><p>Preparando la selección…</p></div></main>
+ <noscript><p class="container py-5">Activa JavaScript para consultar el catálogo interactivo.</p></noscript>
+ <footer class="site-footer"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-3"><div><a class="brand footer-brand" href="#/">Cine<span>Frame</span></a><p>Buenas historias. Una mirada propia.</p></div><div class="footer-note">Proyecto académico de desarrollo web frontend.<br />Reseñas editoriales y portadas ilustrativas. Sin reproducción de películas.</div></div></footer>
+ <div id="notification" class="notification" role="status" aria-live="polite"></div>
+</body>
+</html>

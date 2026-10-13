@@ -1,0 +1,5 @@
+node_modules/
+.local/
+deployment-private.json
+*.zip
+.DS_Store

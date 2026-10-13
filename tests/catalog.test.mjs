@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {selectMovies,orderMovies,safeText,validateComment} from '../src/catalog.js';
+const movies=JSON.parse(fs.readFileSync(new URL('../src/movies.json',import.meta.url)));
+test('catálogo completo y portadas disponibles',()=>{assert.equal(movies.length,8);assert.equal(new Set(movies.map(m=>m.id)).size,8);for(const m of movies){assert.ok(fs.existsSync(new URL('../assets/images/'+m.id+'.svg',import.meta.url)));assert.ok(m.duration>0);assert.equal(m.cast.length,3);}});
+test('búsqueda por título, actor y director, sin distinguir tildes',()=>{assert.equal(selectMovies(movies,{q:'parasitos'})[0].id,'parasite');assert.equal(selectMovies(movies,{q:' greta lee '})[0].id,'past-lives');assert.equal(selectMovies(movies,{q:'Nolan'}).length,2);});
+test('filtros combinados por género y año',()=>{assert.equal(selectMovies(movies,{genre:'Ciencia ficción',year:'2014'})[0].id,'interstellar');assert.equal(selectMovies(movies,{year:'2023'}).length,2);assert.equal(selectMovies(movies,{q:'inexistente'}).length,0);});
+test('orden inicial por fecha y ordenamientos adicionales',()=>{assert.equal(orderMovies(movies)[0].id,'dune-part-two');assert.equal(orderMovies(movies,'oldest')[0].id,'inception');assert.equal(orderMovies(movies,'rating')[0].id,'parasite');assert.equal(orderMovies(movies,'title')[0].id,'dune-part-two');const original=movies.map(m=>m.id);orderMovies(movies,'oldest');assert.deepEqual(movies.map(m=>m.id),original);});
+test('favoritas se combinan con filtros',()=>{assert.equal(selectMovies(movies,{favorites:true,genre:'Romance'},['past-lives','interstellar']).length,1);assert.equal(selectMovies(movies,{favorites:true},[]).length,0);});
+test('comentarios exigen alias, texto y valoración válidos',()=>{assert.equal(validateComment({alias:'BJ',text:'Una historia que vale la pena.',rating:5}),'');assert.ok(validateComment({alias:'A',text:'Muy bien',rating:7}));assert.ok(validateComment({alias:'BJ',text:'x'.repeat(601),rating:3}));});
+test('contenido de comentarios se trata como texto seguro',()=>{assert.equal(safeText('<script>alert("x")</script>'),'&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt;');assert.equal(safeText("O'Connor & cine"),'O&#39;Connor &amp; cine');});
+test('grillas solicitadas y recursos locales',()=>{const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');const app=fs.readFileSync(new URL('../src/app.js',import.meta.url),'utf8');assert.match(app,/col-12 col-sm-6 col-md-4/);assert.match(html,/assets\/vendor\/bootstrap\.min\.css/);assert.doesNotMatch(html,/(?:src|href)="https?:\/\//);});
